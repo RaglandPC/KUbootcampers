@@ -26,7 +26,11 @@ module.exports = (Sequelize, DataTypes) => {
       allowNull: false
     },
     profile_picture_url: {
-      type: DataTypes.STRING,
+      type: DataTypes.BLOB,
+      allowNull: false
+    },
+    bio: {
+      type: DataTypes.TEXT,
       allowNull: false
     }
   });
