@@ -30,7 +30,8 @@ $(document).ready(function () {
     return document.getElementById(id).value;
  }
 
-  $('profileSubmit').on('click', submitForm);
+
+  
   function submitForm(e) {
     e.preventDefault();
     var file = getImputVal('file');
@@ -43,34 +44,26 @@ $(document).ready(function () {
     var dropdown = $("select option:selected").val();
     console.log(dropdown);
     console.log(file);
-   
-    //   // $.ajax({
-    //   //   method: "PUT",
-    //   //   url: "/burgers/" + burger_id
-    //   // }).then(function(data) {
+    
+    let user = {
+      profile_picture_url: file,
+      first_name: first,
+      last_name: last,
+      email:email,
+      phone_number: number,
+      bio: textarea2
+    };
+      $.post("/user/create", user)
+      .then(function(data) {
 
-    //   //   location.reload();
-    //   // });
+        location.reload();
+      });
 
-    // });
-  }
+    };
+
+    $('#profileSubmit').on('click', submitForm);
   $("#pickclass").on("click", submitForm)
-    function submitForm(er) {
-    er.preventDefault();
 
-   var dropdown = $("select option:selected").val();
-
-    // re-initialize material-select
-    console.log(dropdown);
-
-    // $.ajax({
-    //   method: "GET",
-    //   url: "/session/:id" 
-    // }).then(function(data) {
-
-    //   location.reload();
-    // });
-}
 });
 
 
