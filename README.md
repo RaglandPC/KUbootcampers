@@ -4,8 +4,13 @@ This Web application is for People that have been in or currently in a KUbootcam
 
 ### Technology Used 
 
-HTML, CSS, Materialize, JavaScript, jQuery, Node, MySQL, Express, Sequelize, JSON, Passport.js and Heroku
+HTML, CSS, Materialize, JavaScript, jQuery, Node, MySQL, Express, Sequelize, JSON, Passport.js and Heroku.
 
 ### Landing Page
 ![alt text](https://github.com/RaglandPC/KUbootcampers/blob/master/KUbotocmaperspic.png)
 
+### What we have left to complete 
+
+We still need the HTML to show up when a user picks a classs.
+We also need to add an UPDATE so the user can update there profile without added a new one everytime.
+Authentication still has some bugs.
