@@ -7,5 +7,5 @@ This Web application is for People that have been in or currently in a KUbootcam
 HTML, CSS, Materialize, JavaScript, jQuery, Node, MySQL, Express, Sequelize, JSON, Passport.js and Heroku
 
 ### Landing Page
-
+![alt text](https://github.com/RaglandPC/KUbootcampers/blob/master/KUbotocmaperspic.png"Logo Title Text 1")
 
